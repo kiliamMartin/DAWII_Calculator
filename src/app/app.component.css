@@ -1,19 +1,33 @@
+main{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+}
+
+
 .calculator-frame{
-    background-color: yellow;
-    width: auto;
-    margin: 0;
+    /* width: auto; */
+    width: 330px;
+    margin: 0 auto;
     padding: 0;
+
+
+   
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
+
+
 
 button{
 
-    background-color: #2F3332;
+    background-color: #313131;
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid hsl(0, 0%, 26%);
     padding: 10px;
     margin: 3px;
     font-size: 30px;
@@ -24,7 +38,6 @@ button{
 }
 
 .calculator-button{
-    width: auto;
     background-color: black;
     display: grid;
     grid-template-columns: 80px 80px 80px 80px ;
@@ -35,38 +48,60 @@ button{
     border-style: none;
    
 }
+ 
+#zero-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
 
 .input-container {
    
-    width: auto;
-    border: 0.5px solid rgba(0, 0, 0, 0.8);
+    width: 100%;
+    border-style: none;
     display: flex;
+    background-color: black;
+    
+    padding: 0;
+    
     
 }
 
 .input-container input {
-    padding: 20px;
+    padding: 30px;
     -moz-box-sizing: border-box;
     min-inline-size: 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    width: auto;
+    width: 100%;
     border-style: none;
-    margin-right: 0;
-    background-color: red;
+    background-color: black;
     color: white;
-    font-size: 24pt;
-   
-    
-    
+    font-size: 28pt;
+    /* caret-color: transparent; */
+    text-align: right; 
+    margin-left: 3px;
 
-    
+}
+
+.input-container input:focus {
+ outline: none;
+  
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.281);
 }
 #equal-button {
     background-color: #11c011;
 }
 #ac-button{
     background-color: red;
+}
+
+::placeholder{
+    color: white;
 }
 
 
